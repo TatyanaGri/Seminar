@@ -17,11 +17,11 @@ int firstNumber = GetNumber();
 Console.WriteLine("Напишите второе число");
 int secondNumber = GetNumber();
 
-if (firstNumber * firstNumber == secondNumber)
+if (firstNumber * firstNumber == secondNumber || secondNumber * secondNumber == firstNumber)
 {
-    Console.WriteLine($"Число {firstNumber} является квадратом числа {secondNumber}");
+    Console.WriteLine($"Да");
 }
 else
 {
-    Console.WriteLine($"Число {firstNumber} не является квадратом числа {secondNumber}");
+    Console.WriteLine($"Нет");
 }
